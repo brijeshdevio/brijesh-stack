@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/sections";
+import { About, Hero } from "@/components/sections";
 import "@/App.css";
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
         <Navbar />
         <main className="w-full sm:w-[90%] mx-auto p-3">
           <Hero />
+          <About />
         </main>
       </ThemeProvider>
     </>
