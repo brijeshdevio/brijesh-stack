@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/Navbar";
 import { About, Contact, Hero, Projects, Skills } from "@/components/sections";
+import { Footer } from "@/components/Footer";
 import "@/App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Projects />
           <Contact />
         </main>
+        <Footer />
       </ThemeProvider>
     </>
   );
