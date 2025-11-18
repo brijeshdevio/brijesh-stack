@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/Navbar";
-import { About, Hero, Projects, Skills } from "@/components/sections";
+import { About, Contact, Hero, Projects, Skills } from "@/components/sections";
 import "@/App.css";
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
+          <Contact />
         </main>
       </ThemeProvider>
     </>
