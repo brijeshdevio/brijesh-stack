@@ -1,23 +1,13 @@
-import { ThemeProvider } from "@/components/theme-provider";
-import { Navbar } from "@/components/Navbar";
-import { About, Contact, Hero, Projects, Skills } from "@/components/sections";
-import { Footer } from "@/components/Footer";
 import "@/App.css";
 
 function App() {
   return (
     <>
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <Navbar />
-        <main className="w-full sm:w-[90%] mx-auto p-3">
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />
-        </main>
-        <Footer />
-      </ThemeProvider>
+      <h1 className="marquee-gradient text-4xl font-black text-slate-900 md:text-6xl lg:text-7xl dark:text-white">
+        Welcome to <strong className="text-primary">Brijesh Dev</strong>{" "}
+        Portfolio.
+        <br />
+      </h1>
     </>
   );
 }
