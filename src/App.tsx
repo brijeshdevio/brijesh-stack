@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="flex min-h-screen flex-col selection:bg-cyan-500/30">
       <Navbar />
-      <main className="hidden">
+      <main>
         <Hero />
         <About />
         <Experience />
