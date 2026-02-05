@@ -1,19 +1,7 @@
 @import "tailwindcss";
-@plugin "daisyui" {
-  themes:
-    light --default,
-    night --prefersdark,
-    cupcake;
-}
 
-@layer utilities {
-  .marquee-gradient {
-    mask-image: linear-gradient(
-      to right,
-      transparent,
-      black 10%,
-      black 90%,
-      transparent
-    );
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
 }

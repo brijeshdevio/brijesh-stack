@@ -1,14 +1,19 @@
+import { Navbar } from "@/layout";
+import { About, Contact, Experience, Hero, Projects } from "@/sections";
 import "@/App.css";
 
 function App() {
   return (
-    <>
-      <h1 className="marquee-gradient text-4xl font-black text-slate-900 md:text-6xl lg:text-7xl dark:text-white">
-        Welcome to <strong className="text-primary">Brijesh Dev</strong>{" "}
-        Portfolio.
-        <br />
-      </h1>
-    </>
+    <div className="flex min-h-screen flex-col selection:bg-cyan-500/30">
+      <Navbar />
+      <main className="hidden">
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+      </main>
+    </div>
   );
 }
 
