@@ -1,4 +1,4 @@
-import type { SkillGroup, TNavItem } from "@/types";
+import type { Project, SkillGroup, TNavItem } from "@/types";
 
 export const NAV_ITEMS: TNavItem[] = [
   { label: "Home", href: "#home" },
@@ -51,5 +51,61 @@ export const SKILLS: SkillGroup[] = [
       "Zod",
       "Multer",
     ],
+  },
+];
+
+export const PROJECTS: Project[] = [
+  {
+    id: "snapurl",
+    title: "SnapURL",
+    subtitle: "SaaS Image Upload & Delivery Platform",
+    description:
+      "A developer-focused SaaS platform that allows users to securely upload images and generate fast public URLs.",
+    features: [
+      "Secure image upload",
+      "JWT & OAuth authentication",
+      "API key system",
+      "Public URL generation",
+      "User dashboard",
+    ],
+    techStack: ["React", "TypeScript", "NestJS", "MongoDB", "JWT", "Argon2"],
+    links: { demo: "#", github: "#", caseStudy: "#" },
+    image:
+      "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=1000",
+  },
+  {
+    id: "passgen",
+    title: "Secure Password Generator",
+    subtitle: "Advanced Password Management Web App",
+    description:
+      "A secure password generator with features such as bulk generation, email sharing, cloud storage for authenticated users.",
+    features: [
+      "Custom password rules",
+      "Bulk generation",
+      "Email sharing",
+      "User authentication",
+      "Cloud & local storage",
+    ],
+    techStack: ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
+    links: { demo: "#", github: "#" },
+    image:
+      "https://images.unsplash.com/photo-1633265485768-3069de8437b7?auto=format&fit=crop&q=80&w=1000",
+  },
+  {
+    id: "auth-api",
+    title: "Auth-Driven Application",
+    subtitle: "Authentication & API-Driven System",
+    description:
+      "A full-stack application focusing on complex authentication flows, protected routes, and role-based access control.",
+    features: [
+      "Protected routes",
+      "Backend validation",
+      "RBAC (Role-Based Access Control)",
+      "Audit logging",
+    ],
+    techStack: ["React", "Node.js", "JWT", "PostgreSQL"],
+    links: { github: "#" },
+    image:
+      "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1000",
   },
 ];
