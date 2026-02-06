@@ -1,5 +1,5 @@
 import { Navbar } from "@/layout";
-import { About, Contact, Experience, Hero, Projects } from "@/sections";
+import { About, Contact, Experience, Hero, Projects, Skills } from "@/sections";
 import "@/App.css";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Skills />
         <Experience />
         <Projects />
         <Contact />
