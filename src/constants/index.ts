@@ -1,4 +1,9 @@
-import type { Project, SkillGroup, TNavItem } from "@/types";
+import type {
+  EngineeringHighlight,
+  Project,
+  SkillGroup,
+  TNavItem,
+} from "@/types";
 
 export const NAV_ITEMS: TNavItem[] = [
   { label: "Home", href: "#home" },
@@ -107,5 +112,36 @@ export const PROJECTS: Project[] = [
     links: { github: "#" },
     image:
       "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1000",
+  },
+];
+
+export const HIGHLIGHTS: EngineeringHighlight[] = [
+  {
+    title: "Authentication Architecture",
+    points: [
+      "JWT access & refresh tokens",
+      "Secure password hashing",
+      "Token expiration & renewal",
+    ],
+  },
+  {
+    title: "API Design",
+    points: [
+      "RESTful structure",
+      "Validation with Zod",
+      "Centralized error handling",
+    ],
+  },
+  {
+    title: "File Upload Security",
+    points: ["File type validation", "Size limits", "Safe storage strategies"],
+  },
+  {
+    title: "Scalability Considerations",
+    points: [
+      "Modular backend architecture",
+      "Database indexing",
+      "Rate limiting",
+    ],
   },
 ];

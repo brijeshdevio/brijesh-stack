@@ -22,3 +22,8 @@ export interface Project {
   };
   image: string;
 }
+
+export interface EngineeringHighlight {
+  title: string;
+  points: string[];
+}

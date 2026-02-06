@@ -1,5 +1,12 @@
 import { Navbar } from "@/layout";
-import { About, Contact, Experience, Hero, Projects, Skills } from "@/sections";
+import {
+  About,
+  Contact,
+  Engineering,
+  Hero,
+  Projects,
+  Skills,
+} from "@/sections";
 import "@/App.css";
 
 function App() {
@@ -10,8 +17,8 @@ function App() {
         <Hero />
         <About />
         <Skills />
-        <Experience />
         <Projects />
+        <Engineering />
         <Contact />
       </main>
     </div>
