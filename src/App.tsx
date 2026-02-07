@@ -5,6 +5,7 @@ import {
   Education,
   Engineering,
   Hero,
+  Indicators,
   Projects,
   Skills,
 } from "@/sections";
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Indicators />
         <About />
         <Skills />
         <Projects />
