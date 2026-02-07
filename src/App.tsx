@@ -1,4 +1,4 @@
-import { Navbar } from "@/layout";
+import { Footer, Navbar } from "@/layout";
 import {
   About,
   Contact,
@@ -23,6 +23,7 @@ function App() {
         <Education />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
