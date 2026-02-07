@@ -27,3 +27,10 @@ export interface EngineeringHighlight {
   title: string;
   points: string[];
 }
+
+export interface EducationEntry {
+  degree: string;
+  institution: string;
+  period: string;
+  description: string;
+}

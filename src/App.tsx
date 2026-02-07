@@ -2,6 +2,7 @@ import { Navbar } from "@/layout";
 import {
   About,
   Contact,
+  Education,
   Engineering,
   Hero,
   Projects,
@@ -19,6 +20,7 @@ function App() {
         <Skills />
         <Projects />
         <Engineering />
+        <Education />
         <Contact />
       </main>
     </div>

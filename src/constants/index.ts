@@ -1,4 +1,5 @@
 import type {
+  EducationEntry,
   EngineeringHighlight,
   Project,
   SkillGroup,
@@ -143,5 +144,22 @@ export const HIGHLIGHTS: EngineeringHighlight[] = [
       "Database indexing",
       "Rate limiting",
     ],
+  },
+];
+
+export const EDUCATION: EducationEntry[] = [
+  {
+    degree: "B.S. in Computer Science",
+    institution: "University of Engineering",
+    period: "2020 - 2024",
+    description:
+      "Focused on Software Engineering, Data Structures, Algorithms, and System Architecture. Active member of the Open Source Society.",
+  },
+  {
+    degree: "Full-Stack Development Certification",
+    institution: "Advanced Tech Academy",
+    period: "2023",
+    description:
+      "Intensive program covering modern web architecture, distributed systems, and professional deployment pipelines.",
   },
 ];
