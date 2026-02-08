@@ -26,7 +26,7 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${scrolled ? "border-b border-slate-800 bg-slate-900/95 py-3 shadow-lg backdrop-blur-md" : "bg-transparent py-3"}`}
+      className={`${scrolled ? "border-b border-slate-800 bg-slate-900/95" : "border-transparent bg-transparent"} fixed top-0 z-50 w-full py-3 transition-all duration-300`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
         <a href="#home" className="group flex items-center space-x-2">
