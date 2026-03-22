@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import brijesh_about from "@/assets/brijesh_about.png";
 
 export function About() {
   return (
@@ -6,7 +7,7 @@ export function About() {
       <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
         <div className="group relative">
           <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600&h=600"
+            src={brijesh_about}
             alt="Kali Avatar"
             className="relative z-10 rounded-2xl border border-slate-800 shadow-2xl grayscale transition-all duration-700 group-hover:grayscale-0"
           />
