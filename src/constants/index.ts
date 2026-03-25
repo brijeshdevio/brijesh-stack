@@ -149,17 +149,17 @@ export const HIGHLIGHTS: EngineeringHighlight[] = [
 
 export const EDUCATION: EducationEntry[] = [
   {
-    degree: "B.S. in Computer Science",
-    institution: "University of Engineering",
-    period: "2020 - 2024",
+    degree: "Bachelor of Computer Applications (BCA)",
+    institution: "Chandigarh University",
+    period: "2026 - present",
     description:
-      "Focused on Software Engineering, Data Structures, Algorithms, and System Architecture. Active member of the Open Source Society.",
+      "Currently pursuing BCA with focus on Software Development, Programming, and IT Systems. Exploring core subjects like Data Structures, Web Development, and Database Management, along with emerging technologies like AI & Machine Learning.",
   },
   {
     degree: "Full-Stack Development Certification",
-    institution: "Advanced Tech Academy",
-    period: "2023",
+    institution: "karmanX (by Tanay Pratap)",
+    period: "2024 - 2025",
     description:
-      "Intensive program covering modern web architecture, distributed systems, and professional deployment pipelines.",
+      "Completed an intensive full-stack program covering backend development, databases, authentication, and modern frontend technologies like React. Built real-world applications and gained hands-on experience in APIs, deployment, and scalable web architecture.",
   },
 ];
