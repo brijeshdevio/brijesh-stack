@@ -1,5 +1,5 @@
 import { PROJECTS } from "@/constants";
-import { ArrowRight, ExternalLink, Github, Layers } from "lucide-react";
+import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 export function Projects() {
   return (
@@ -98,15 +98,6 @@ export function Projects() {
                     >
                       <Github size={18} />
                       <span>GitHub</span>
-                    </a>
-                  )}
-                  {project.links.caseStudy && (
-                    <a
-                      href={project.links.caseStudy}
-                      className="flex items-center space-x-2 font-bold text-white transition-colors hover:text-cyan-400"
-                    >
-                      <Layers size={18} />
-                      <span>Case Study</span>
                     </a>
                   )}
                 </div>

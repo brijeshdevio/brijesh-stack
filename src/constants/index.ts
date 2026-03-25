@@ -1,3 +1,8 @@
+import reelGrap from "@/assets/projects/reel-grap.png";
+import tickShare from "@/assets/projects/tick-share.png";
+import snapUrl from "@/assets/projects/snap-url.png";
+import hookRelay from "@/assets/projects/hook-relay.png";
+
 import type {
   EducationEntry,
   EngineeringHighlight,
@@ -74,45 +79,102 @@ export const PROJECTS: Project[] = [
       "Public URL generation",
       "User dashboard",
     ],
-    techStack: ["React", "TypeScript", "NestJS", "MongoDB", "JWT", "Argon2"],
-    links: { demo: "#", github: "#", caseStudy: "#" },
-    image:
-      "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=1000",
+    techStack: [
+      "React",
+      "TypeScript",
+      "NestJS",
+      "MongoDB",
+      "JWT",
+      "Argon2",
+      "Appwrite",
+    ],
+    links: {
+      demo: "https://snapurl.brijeshdev.in",
+      github: "https://github.com/brijeshdevio/snap-url",
+    },
+    image: snapUrl,
   },
   {
-    id: "passgen",
-    title: "Secure Password Generator",
-    subtitle: "Advanced Password Management Web App",
+    id: "hookrelay",
+    title: "HookRelay",
+    subtitle: "Webhook Monitoring & Debugging Tool",
     description:
-      "A secure password generator with features such as bulk generation, email sharing, cloud storage for authenticated users.",
+      "A developer-focused webhook monitoring platform to capture, inspect, and replay webhook events in real-time. Built for reliability, debugging, and complete visibility into event-driven systems.",
     features: [
-      "Custom password rules",
-      "Bulk generation",
-      "Email sharing",
-      "User authentication",
-      "Cloud & local storage",
+      "Real-time webhook capture",
+      "Webhook event replay",
+      "Detailed request inspection (headers, body, logs)",
+      "Live event streaming dashboard",
+      "Reliable delivery tracking",
+      "Secure endpoint management",
+      "Developer-friendly UI",
     ],
-    techStack: ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
-    links: { demo: "#", github: "#" },
-    image:
-      "https://images.unsplash.com/photo-1633265485768-3069de8437b7?auto=format&fit=crop&q=80&w=1000",
+    techStack: [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Node.js",
+      "Hono",
+      "PostgreSQL",
+      "JWT",
+      "BullMQ",
+      "Redis",
+    ],
+    links: {
+      demo: "https://hook-relay.brijeshdev.in/",
+      github: "https://github.com/brijeshdevio/hook-relay",
+    },
+    image: hookRelay,
   },
   {
-    id: "auth-api",
-    title: "Auth-Driven Application",
-    subtitle: "Authentication & API-Driven System",
+    id: "reelgrab",
+    title: "ReelGrab",
+    subtitle: "Instagram Reel Downloader Web App",
     description:
-      "A full-stack application focusing on complex authentication flows, protected routes, and role-based access control.",
+      "A fast and privacy-focused Instagram Reel downloader that allows users to download high-quality videos without watermark. Built for simplicity, speed, and seamless cross-device experience.",
     features: [
-      "Protected routes",
-      "Backend validation",
-      "RBAC (Role-Based Access Control)",
-      "Audit logging",
+      "Fast reel processing",
+      "HD video downloads",
+      "No watermark downloads",
+      "No login required",
+      "Privacy-first (no data storage)",
+      "Fully responsive design",
     ],
-    techStack: ["React", "Node.js", "JWT", "PostgreSQL"],
-    links: { github: "#" },
-    image:
-      "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1000",
+    techStack: ["React", "TypeScript", "Node.js", "Express", "TailwindCSS"],
+    links: {
+      demo: "https://reel-grap.brijeshdev.in",
+      github: "https://github.com/brijeshdevio/reel-grap",
+    },
+    image: reelGrap,
+  },
+  {
+    id: "tickshare",
+    title: "TickShare",
+    subtitle: "Temporary File Sharing Platform",
+    description:
+      "A secure temporary file sharing platform that allows users to upload files, set expiration times, and share encrypted links. Designed for privacy, control, and seamless file transfer across devices.",
+    features: [
+      "Auto-expiring file links",
+      "Upload files up to 5MB",
+      "End-to-end encrypted sharing",
+      "Custom expiration (10 minutes to 7 days)",
+      "Private shareable links",
+      "Access tracking (views & activity)",
+      "Fast and responsive UI",
+    ],
+    techStack: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Cloud Storage (Appwrite)",
+      "TailwindCSS",
+    ],
+    links: {
+      demo: "https://tick-share.brijeshdev.in/",
+      github: "https://github.com/brijeshdevio/tick-share",
+    },
+    image: tickShare,
   },
 ];
 
