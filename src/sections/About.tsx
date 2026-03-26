@@ -18,25 +18,23 @@ export function About() {
             <h2 className="flex items-center text-sm font-bold tracking-widest text-cyan-400 uppercase">
               <span className="mr-3 h-[1px] w-8 bg-cyan-500"></span> About Me
             </h2>
-            <h3 className="text-4xl font-extrabold text-white">
-              Passionate about solving real engineering problems.
-            </h3>
+            <p className="text-lg leading-relaxed text-slate-400">
+              I’m a backend-focused full-stack engineer who enjoys building
+              scalable systems and developer tools.
+            </p>
           </div>
           <p className="text-lg leading-relaxed text-slate-400">
-            I am an entry-level full-stack developer focused on building
-            practical, end-to-end web applications rather than tutorial-based
-            projects. My work spans modern frontend interfaces with React and
-            TypeScript, and scalable backend systems using Node.js, NestJS, and
-            REST API architecture.
+            I specialize in APIs, webhook handling systems, and automation
+            workflows using modern technologies like Node.js, Express, and
+            Prisma.
           </p>
           <p className="text-lg leading-relaxed text-slate-400">
-            I enjoy designing applications from the ground up — structuring
-            clean APIs, implementing secure authentication flows, modeling
-            databases, and deploying production-ready systems. Through projects
-            like SaaS dashboards, authentication platforms, and
-            developer-focused tools, I’ve developed a strong interest in backend
-            architecture, system design thinking, and performance-conscious
-            development.
+            Recently, I’ve been working on projects involving webhook delivery
+            systems, logging pipelines, and real-time applications.
+          </p>
+          <p className="text-lg leading-relaxed text-slate-400">
+            I’m currently looking for opportunities where I can contribute to
+            building high-performance backend systems.
           </p>
           <div className="grid gap-6 sm:grid-cols-2">
             {[

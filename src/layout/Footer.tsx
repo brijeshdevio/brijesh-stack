@@ -14,33 +14,34 @@ export function Footer() {
                 Brijesh
               </span>
               <span className="text-xs text-slate-500">
-                Full-Stack Developer
+                Full-Stack Engineer
               </span>
             </div>
           </div>
 
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-8 text-sm">
             <a
-              href="#"
-              className="text-slate-400 transition-colors hover:text-white"
+              href="https://github.com/brijeshdevio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 transition-colors hover:text-cyan-400"
             >
               GitHub
             </a>
             <a
-              href="#"
-              className="text-slate-400 transition-colors hover:text-white"
+              href="https://linkedin.com/in/brijeshdev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 transition-colors hover:text-cyan-400"
             >
               LinkedIn
             </a>
             <a
-              href="#"
-              className="text-slate-400 transition-colors hover:text-white"
+              href="mailto:brijeshio@duck.com"
+              className="text-slate-400 transition-colors hover:text-cyan-400"
             >
               Email
             </a>
-            <button className="rounded-lg border border-slate-700 bg-slate-800 px-5 py-2 text-sm font-bold text-white transition-colors hover:bg-slate-700">
-              Resume
-            </button>
           </div>
         </div>
 
@@ -48,10 +49,18 @@ export function Footer() {
           <p>© 2026 Brijesh. All rights reserved.</p>
           <div className="flex items-center space-x-6">
             <span className="flex items-center">
-              <ShieldCheck size={14} className="mr-1.5" /> Secure Design
+              <ShieldCheck
+                size={14}
+                className="mr-1.5 h-5 w-5 hover:text-cyan-400"
+              />{" "}
+              Secure Design
             </span>
             <span className="flex items-center">
-              <Terminal size={14} className="mr-1.5" /> High Performance
+              <Terminal
+                size={14}
+                className="mr-1.5 h-5 w-5 hover:text-cyan-400"
+              />{" "}
+              High Performance
             </span>
           </div>
         </div>

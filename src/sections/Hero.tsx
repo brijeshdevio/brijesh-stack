@@ -1,4 +1,5 @@
-import { ArrowRight, Download } from "lucide-react";
+import { STATS } from "@/constants";
+import { ArrowRight, BriefcaseBusiness, Rocket } from "lucide-react";
 
 export function Hero() {
   return (
@@ -16,28 +17,22 @@ export function Hero() {
             <span>Open to Opportunities</span>
           </div>
           <h1 className="text-5xl leading-tight font-extrabold text-white lg:text-7xl">
-            Full-Stack <span className="text-cyan-400">Developer</span>
+            Full-Stack <span className="text-cyan-400">Engineer</span>
           </h1>
           <p className="max-w-lg text-xl leading-relaxed text-slate-400">
-            Building Scalable & Secure Web Applications. I design modern SaaS
-            applications using React, TypeScript, Node.js, and NestJS.
+            I build production-ready APIs, webhook systems, and developer tools
+            using Node.js, Express, NestJS and Prisma.
           </p>
 
-          <div className="flex flex-wrap gap-3">
-            {[
-              "React",
-              "TypeScript",
-              "Node.js",
-              "NestJS",
-              "MongoDB",
-              "PostgreSQL",
-            ].map((tech) => (
-              <span
-                key={tech}
-                className="rounded border border-slate-700 bg-slate-800/50 px-3 py-1 font-mono text-xs text-slate-400"
+          <div className="flex flex-col gap-3">
+            {STATS.map((feat) => (
+              <div
+                key={feat}
+                className="flex items-center space-x-2 text-slate-500"
               >
-                {tech}
-              </span>
+                <span className="rounded-full text-cyan-500">✔</span>
+                <span>{feat}</span>
+              </div>
             ))}
           </div>
 
@@ -46,7 +41,8 @@ export function Hero() {
               href="#projects"
               className="group flex items-center justify-center rounded-xl bg-white px-8 py-4 font-bold text-slate-900 transition-all hover:scale-[1.02] hover:bg-cyan-400"
             >
-              View Projects{" "}
+              <Rocket className="me-2 h-5 w-5" />
+              View Live Projects
               <ArrowRight
                 className="ml-2 transition-transform group-hover:translate-x-1"
                 size={18}
@@ -56,14 +52,10 @@ export function Hero() {
               href="#contact"
               className="flex items-center justify-center rounded-xl border border-slate-700 bg-slate-800/50 px-8 py-4 font-bold text-white transition-all hover:scale-[1.02] hover:bg-slate-700/50"
             >
-              Contact Me
+              <BriefcaseBusiness className="me-2 h-5 w-5" />
+              Hire Me
             </a>
           </div>
-
-          <button className="flex items-center space-x-2 text-sm font-semibold text-slate-400 transition-colors hover:text-white">
-            <Download size={18} />
-            <span>Download Resume</span>
-          </button>
         </div>
 
         <div className="animate-in fade-in zoom-in-95 relative duration-1000">

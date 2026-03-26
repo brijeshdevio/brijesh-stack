@@ -21,6 +21,12 @@ export const NAV_ITEMS: TNavItem[] = [
   { label: "Contact", href: "#contact" },
 ];
 
+export const STATS = [
+  "5+ Production-ready projects",
+  "Built real-time & webhook systems",
+  "Focused on performance & scalability",
+];
+
 export const SKILLS: SkillGroup[] = [
   {
     category: "Frontend Development",
