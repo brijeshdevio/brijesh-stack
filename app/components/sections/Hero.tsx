@@ -21,7 +21,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center pt-16"
+      className="relative min-h-screen flex items-center pt-16 overflow-hidden md:overflow-visible"
     >
       {/* Green glows */}
       <div className="absolute top-[30%] left-0 w-[600px] h-[500px] bg-[rgba(16,185,129,0.05)] rounded-full blur-[120px] pointer-events-none" />
