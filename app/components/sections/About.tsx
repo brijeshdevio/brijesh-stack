@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { SectionLabel } from "../shared/SectionLabel";
+import aboutPic from "../../../public/brijesh.png";
 
 export function About() {
   return (
@@ -14,21 +16,17 @@ export function About() {
               <div
                 className="absolute inset-0"
                 style={{
-                  background:
-                    "linear-gradient(135deg, #1a1a1a, #111, #0d0d0d)",
+                  background: "linear-gradient(135deg, #1a1a1a, #111, #0d0d0d)",
                 }}
               />
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 rounded-full bg-[rgba(16,185,129,0.15)] border border-[rgba(16,185,129,0.3)] flex items-center justify-center mx-auto">
-                    <span className="text-[40px] font-black text-brand-green2">
-                      B
-                    </span>
-                  </div>
-                  <p className="mt-3 text-[11px] text-[#444] font-mono">
-                    brijesh.jpg
-                  </p>
-                </div>
+                <Image
+                  src={aboutPic}
+                  alt="brijesh"
+                  width={380}
+                  height={380}
+                  className="grayscale-100 hover:grayscale-0 transition-all duration-500 scale-95 rounded-xl hover:scale-100"
+                />
               </div>
             </div>
             {/* Dot grid */}

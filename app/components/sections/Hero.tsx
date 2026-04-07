@@ -70,8 +70,19 @@ export function Hero() {
               }}
             >
               <p className="text-brand-gray2 text-lg leading-[1.7] max-w-[520px] m-0">
-                Full-Stack Engineer specializing in React, Node.js and
-                TypeScript. I turn ideas into production-ready SaaS products.
+                Full-Stack Engineer specializing in{" "}
+                <code className="text-brand-green2 hover:underline">
+                  Node.js
+                </code>{" "}
+                and{" "}
+                <code className="text-brand-green2 hover:underline">
+                  Express
+                </code>{" "}
+                ,{" "}
+                <code className="text-brand-green2 hover:underline">
+                  PostgreSQL
+                </code>
+                . I turn ideas into production-ready SaaS products.
               </p>
             </div>
 
