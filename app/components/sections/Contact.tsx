@@ -1,3 +1,4 @@
+import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { SectionLabel } from "../shared/SectionLabel";
 
 export function Contact() {
@@ -28,18 +29,18 @@ export function Contact() {
 
         <div className="mt-10">
           <a
-            href="mailto:hello@brijeshdev.in"
+            href="mailto:brijeshio@duck.com"
             className="text-[22px] font-semibold text-brand-white no-underline border-b border-transparent pb-0.5 transition-colors duration-200 hover:border-brand-white"
           >
-            hello@brijeshdev.in
+            brijeshio@duck.com
           </a>
         </div>
 
-        {/* <div className="flex justify-center gap-3 mt-10">
+        <div className="flex justify-center gap-3 mt-10">
           {[
-            { icon: <Github size={20} />, label: "GitHub" },
-            { icon: <Linkedin size={20} />, label: "LinkedIn" },
-            { icon: <Twitter size={20} />, label: "Twitter" },
+            { icon: <BsGithub size={20} />, label: "GitHub" },
+            { icon: <BsLinkedin size={20} />, label: "LinkedIn" },
+            { icon: <BsTwitterX size={20} />, label: "Twitter" },
           ].map((s) => (
             <button
               key={s.label}
@@ -49,7 +50,7 @@ export function Contact() {
               {s.icon}
             </button>
           ))}
-        </div> */}
+        </div>
 
         <p className="text-[#444] text-xs mt-10 font-mono">
           Based in India · Open to remote work globally
