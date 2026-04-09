@@ -69,24 +69,24 @@ export const PROJECTS = [
 export const TESTIMONIALS = [
   {
     quote:
-      "Brijesh built our admin dashboard in under two weeks. Clean code, no hand-holding needed, and he flagged issues before we even noticed them. Exactly the kind of developer you want on a project.",
-    name: "Aryan Mehta",
-    role: "Co-founder, early-stage SaaS startup",
-    initials: "AM",
+      "He helped me with both my ReactJS and a TypeScript project last semester. What I appreciate most is he doesn't do it for you — he guides you to figure it out yourself. I used to panic before deadlines but now I feel way more confident tackling new tech. Having someone like him to ask is honestly underrated.",
+    name: "Ajay Gupta",
+    role: "BCA Student",
+    initials: "AG",
   },
   {
     quote:
-      "I gave him a rough idea and a deadline. He came back with something better than I imagined — auth, dashboard, API, all connected and deployed. Would hire again without thinking twice.",
-    name: "Priya Nair",
-    role: "Freelance Product Designer",
-    initials: "PN",
+      "I was completely lost with my Node.js backend assignment — couldn't figure out why my API routes kept breaking. He sat with me, didn't just fix it, but actually explained why it was happening. After that session I started thinking in terms of middleware and request flow instead of just copy-pasting code. Genuinely changed how I approach backend stuff.",
+    name: "Aradhna Singh",
+    role: "BCA Student",
+    initials: "AS",
   },
   {
     quote:
-      "Asked him to review my backend code and he rewrote half of it with proper Zod validation and error handling. Learned more in that code review than in 3 months of tutorials.",
-    name: "Rohan Singh",
-    role: "Junior Developer, bootcamp grad",
-    initials: "RS",
+      "React was honestly intimidating at first — all the hooks, state management, component structure. I asked him to help me with one project and he broke it down in a way that actually made sense. No jargon overload, just practical stuff I could apply immediately. My project got submitted on time and I actually understood what I built.",
+    name: "Vishal",
+    role: "Diploma Student",
+    initials: "V",
   },
 ];
 
