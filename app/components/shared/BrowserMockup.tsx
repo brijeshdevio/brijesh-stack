@@ -17,7 +17,7 @@ export function BrowserMockup({ project: p }: { project: ProjectType }) {
         <div className="flex-1 mx-3 bg-[#1a1a1a] rounded-md py-1 px-2.5 flex items-center gap-2">
           <Globe size={12} color="#444" />
           <span className="text-[12px] text-[#444] font-mono">
-            {p.name.toLowerCase()}.vercel.app
+            {p.name.toLowerCase()}.brijeshdev.in
           </span>
         </div>
       </div>

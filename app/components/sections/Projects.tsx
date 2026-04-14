@@ -10,10 +10,10 @@ export function Projects() {
       <div className="max-w-[1100px] mx-auto px-6">
         <SectionLabel>Projects</SectionLabel>
         <h2 className="text-[38px] font-bold text-brand-white text-center mt-3 mb-2">
-          Things I've actually shipped
+          Things {`I've`} actually shipped
         </h2>
         <p className="text-brand-gray text-center text-base mb-16">
-          Each project solved a real problem. Here's what I built and why.
+          Each project solved a real problem. {`Here's`} what I built and why.
         </p>
 
         {/* Alternating first 2 */}
@@ -47,12 +47,16 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-6 mt-2">
-                  <button className="flex items-center gap-1 text-sm text-brand-green2 font-medium bg-transparent border-none cursor-pointer">
-                    Live Demo <ChevronRight size={16} />
-                  </button>
-                  <button className="flex items-center gap-1 text-sm text-brand-gray bg-transparent border-none cursor-pointer">
-                    GitHub <ExternalLink size={14} />
-                  </button>
+                  <a href={p?.link} target="__blank">
+                    <button className="flex items-center gap-1 text-sm text-brand-green2 font-medium bg-transparent border-none cursor-pointer">
+                      Live Demo <ChevronRight size={16} />
+                    </button>
+                  </a>
+                  <a href={p?.github} target="__blank">
+                    <button className="flex items-center gap-1 text-sm text-brand-gray bg-transparent border-none cursor-pointer">
+                      GitHub <ExternalLink size={14} />
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -84,12 +88,16 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-6 mt-2">
-                  <button className="flex items-center gap-1 text-sm text-brand-green2 font-medium bg-transparent border-none cursor-pointer">
-                    Live Demo <ChevronRight size={16} />
-                  </button>
-                  <button className="flex items-center gap-1 text-sm text-brand-gray bg-transparent border-none cursor-pointer">
-                    GitHub <ExternalLink size={14} />
-                  </button>
+                  <a href={p?.link} target="__blank">
+                    <button className="flex items-center gap-1 text-sm text-brand-green2 font-medium bg-transparent border-none cursor-pointer">
+                      Live Demo <ChevronRight size={16} />
+                    </button>
+                  </a>
+                  <a href={p?.github} target="__blank">
+                    <button className="flex items-center gap-1 text-sm text-brand-gray bg-transparent border-none cursor-pointer">
+                      GitHub <ExternalLink size={14} />
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>

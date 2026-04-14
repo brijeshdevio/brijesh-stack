@@ -131,9 +131,11 @@ export function Hero() {
               >
                 View My Work <ArrowRight size={16} />
               </button>
-              <button className="flex items-center gap-2 py-3 px-6 bg-transparent text-brand-white font-semibold text-[15px] rounded-[10px] border border-[#333] cursor-pointer hover:border-white transition-colors duration-200">
-                Download CV <Download size={16} />
-              </button>
+              <a href={"/Brijesh_Kumar_Resume.pdf"} target="__blank">
+                <button className="flex items-center gap-2 py-3 px-6 bg-transparent text-brand-white font-semibold text-[15px] rounded-[10px] border border-[#333] cursor-pointer hover:border-white transition-colors duration-200">
+                  Download CV <Download size={16} />
+                </button>
+              </a>
             </div>
           </div>
 

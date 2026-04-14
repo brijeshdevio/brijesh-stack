@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/app/lib/constants";
+import Link from "next/link";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -32,13 +33,14 @@ export function Navbar() {
         }`}
       >
         <div className="max-w-[1100px] mx-auto px-6 h-16 flex items-center justify-between">
-          <button
-            onClick={() => scrollTo("hero")}
-            className="flex items-center gap-2 bg-transparent border-none cursor-pointer text-brand-white font-mono text-sm font-semibold"
-          >
-            <span className="w-2 h-2 rounded-full bg-brand-green2 animate-blink-slow2" />
-            brijesh.dev
-          </button>
+          <Link href="/#hero" className="group flex items-center space-x-2">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r  bg-brand-green2  font-bold text-slate-900 transition-transform group-hover:rotate-6">
+              B
+            </div>
+            <span className="bg-gradient-to-r from-white bg-brand-green2  bg-clip-text text-2xl font-bold tracking-tight text-transparent">
+              Brijesh
+            </span>
+          </Link>
 
           {/* Desktop */}
           <div className="hidden md:flex items-center gap-8">
