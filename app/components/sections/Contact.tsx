@@ -41,7 +41,7 @@ export function Contact() {
             {
               icon: <BsGithub size={20} />,
               label: "GitHub",
-              url: "https://github.com/brijeshio",
+              url: "https://github.com/brijeshdevio",
             },
             {
               icon: <BsLinkedin size={20} />,
