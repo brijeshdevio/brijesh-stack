@@ -195,10 +195,10 @@ export default function HeroSection() {
               transition={{ delay: 0.1, duration: 0.5 }}
               className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary shadow-sm"
             >
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-pulse rounded-full bg-primary opacity-75"></span>
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
-              </span>
+              <div className="relative flex h-2.5 w-2.5 items-center justify-center">
+                <span className="absolute h-full w-full rounded-full bg-primary" />
+                <span className="absolute h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+              </div>
               Available for work
             </motion.div>
 

@@ -9,6 +9,7 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
+import Logo from "@/assets/Logo";
 
 const NAV_LINKS = [
   { name: "About", href: "#about" },
@@ -91,22 +92,7 @@ export default function NavbarLayout() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a
-          href="#"
-          className="group relative flex items-center gap-1 font-['Syne'] text-xl font-bold tracking-tight text-foreground focus:outline-none"
-          onClick={(e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-        >
-          <span className="text-primary transition-transform duration-300 group-hover:-translate-x-1">
-            [
-          </span>
-          Brijesh
-          <span className="text-primary transition-transform duration-300 group-hover:translate-x-1">
-            ]
-          </span>
-        </a>
+        <Logo />
 
         {/* Desktop Nav */}
         <nav className="hidden items-center gap-8 md:flex">
@@ -175,8 +161,7 @@ export default function NavbarLayout() {
             >
               <SheetHeader className="mb-8 text-left">
                 <SheetTitle className="text-left font-['Syne'] text-xl font-bold text-foreground">
-                  <span className="text-primary">[</span> Brijesh{" "}
-                  <span className="text-primary">]</span>
+                  <Logo />
                 </SheetTitle>
               </SheetHeader>
 
