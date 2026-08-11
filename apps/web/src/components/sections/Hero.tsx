@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
-import { Download, GitCompareArrows, Mail } from "lucide-react";
+import { Download, Mail } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
+import { FiLinkedin } from "react-icons/fi";
+
 import { Button } from "@/components/ui/button";
 
 const CODE_LINES = [
@@ -219,7 +222,6 @@ export default function HeroSection() {
               </motion.h1>
             </div>
 
-            {/* Subline */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -296,12 +298,12 @@ export default function HeroSection() {
             >
               {[
                 {
-                  icon: GitCompareArrows,
+                  icon: FaGithub,
                   href: "https://github.com/brijeshdevio",
                   label: "GitHub",
                 },
                 {
-                  icon: Mail,
+                  icon: FiLinkedin,
                   href: "https://linkedin.com/in/brijeshsoftdev",
                   label: "LinkedIn",
                 },
