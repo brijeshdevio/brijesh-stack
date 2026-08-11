@@ -4,38 +4,19 @@
   width="200"
   height="200"
 >
-  <!-- Left vertical bracket line -->
-  <line
-    x1="30"
-    y1="30"
-    x2="30"
-    y2="170"
-    stroke="#CB6441"
-    stroke-width="8"
-    stroke-linecap="square"
-  />
-
-  <!-- Right vertical bracket line -->
-  <line
-    x1="170"
-    y1="30"
-    x2="170"
-    y2="170"
-    stroke="#CB6441"
-    stroke-width="8"
-    stroke-linecap="square"
-  />
-
-  <!-- Center B letter -->
+  <!-- Center B letter - enlarged -->
   <text
-    x="100"
-    y="132"
+    x="90"
+    y="170"
     font-family="Arial, Helvetica, sans-serif"
-    font-size="120"
+    font-size="200"
     font-weight="bold"
-    fill="#CB6441"
+    fill="#fff"
     text-anchor="middle"
   >
     B
   </text>
+
+  <!-- Dot after B - enlarged and repositioned -->
+  <circle cx="180" cy="140" r="20" fill="#CB6441" />
 </svg>
