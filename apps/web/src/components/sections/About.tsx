@@ -137,7 +137,7 @@ export default function AboutSection() {
                   Currently building
                 </span>
                 <div className="flex flex-wrap gap-3">
-                  {["CourseGen AI", "PicURL"].map((project) => (
+                  {["Mockly - Online Test"].map((project) => (
                     <div
                       key={project}
                       className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-medium text-primary"

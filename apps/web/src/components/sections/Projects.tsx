@@ -20,58 +20,135 @@ const projects: Project[] = [
     title: "CourseGen AI",
     description:
       "AI-powered course generator that creates structured learning paths with resources, quizzes, and progress tracking.",
-    tech: ["Next.js", "OpenAI API", "Prisma", "PostgreSQL", "Stripe"],
-    liveUrl: "#",
-    githubUrl: "#",
+    tech: [
+      "React",
+      "Tanstack Query",
+      "Shadcn",
+      "Axios",
+      "NestJs",
+      "PostgreSQL",
+      "Prisma ORM",
+      "JWT",
+      "AI SDK & Groq",
+      "Zod",
+    ],
+    liveUrl: "https://coursegen.brijeshdev.in/",
+    githubUrl: "https://github.com/brijeshdevio/coursegen-ai",
     category: "AI",
     featured: true,
   },
   {
-    title: "AuthForge",
-    description:
-      "Production-ready authentication microservice with JWT rotation, OAuth2, RBAC, and email verification baked in.",
-    tech: ["NestJS", "TypeScript", "PostgreSQL", "Redis", "Docker"],
-    liveUrl: "#",
-    githubUrl: "#",
-    category: "API",
-    featured: false,
-  },
-  {
     title: "PicURL",
     description:
-      "URL shortener with analytics dashboard, custom slugs, QR codes, and team collaboration features.",
-    tech: ["Next.js", "TailwindCSS", "Prisma", "PostgreSQL", "NextAuth"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "PicURL is a developer-focused SaaS image upload and delivery platform designed for avatars, social media assets, and application-only image usage.",
+    tech: [
+      "React",
+      "Axios",
+      "Zod",
+      "Zustand",
+      "Tanstack Query",
+      "Flyonui",
+      "NestJs",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Passport",
+      "Github OAuth",
+      "Pino",
+      "Sharp",
+    ],
+    liveUrl: "https://picurl.brijeshdev.in/",
+    githubUrl: "https://github.com/brijeshdevio/picurl",
     category: "SaaS",
     featured: false,
   },
   {
-    title: "StreamFlow",
+    title: "Zipr",
     description:
-      "Real-time collaborative whiteboard with WebSocket sync, drawing tools, and export to PDF/PNG.",
-    tech: ["React", "Socket.io", "Konva.js", "Express", "MongoDB"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Production-ready authentication microservice with JWT rotation, OAuth2, RBAC, and email verification baked in.",
+    tech: [
+      "React",
+      "Axios",
+      "Shadcn",
+      "Sonner",
+      "NestJs",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Zod",
+      "Argon2",
+      "Nodemailer",
+    ],
+    liveUrl: "https://zipr.brijeshdev.in/",
+    githubUrl: "https://github.com/brijeshdevio/zipr",
+    category: "Full-Stack",
+    featured: false,
+  },
+  {
+    title: "DeadDrop",
+    description:
+      "A secure, zero-knowledge secret-sharing platform. Encrypt a message with a passphrase, get a one-time code to share. Once read, it's gone forever — nothing stored, nothing logged.",
+    tech: [
+      "React",
+      "Typescript",
+      "Tailwind",
+      "Shadcn",
+      "React Hook Form",
+      "Axios",
+      "Tanstack Query",
+      "Recharts",
+      "Web Crypto API",
+      "NestJs",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Zod",
+    ],
+    liveUrl: "https://deadrop.brijeshdev.in/",
+    githubUrl: "https://github.com/brijeshdevio/dead-drop",
     category: "Full-Stack",
     featured: true,
   },
   {
-    title: "DevMetrics",
+    title: "SnippetX",
     description:
-      "GitHub analytics dashboard that visualizes commit history, PR velocity, and team productivity metrics.",
-    tech: ["React", "Recharts", "GitHub API", "TailwindCSS", "TypeScript"],
-    githubUrl: "#",
-    category: "DevTools",
-    featured: false,
+      "SnippetX is a web application that allows developers to save, organize, search, and manage code snippets. Built for speed, simplicity, and productivity — perfect for developers who want a lightweight alternative to Notion/Gists.",
+    tech: [
+      "React",
+      "Typescript",
+      "Axios",
+      "Tailwindcss",
+      "Motion",
+      "DaisyUI",
+      "NestJs",
+      "Mongoose",
+      "Groq-SDK",
+      "Argon2",
+      "Helmet",
+    ],
+    liveUrl: "https://snippetx.brijeshdev.in/",
+    githubUrl: "https://github.com/brijeshdevio/snippet-x",
+    category: "Full-Stack",
+    featured: true,
   },
   {
-    title: "ShopCraft",
+    title: "Authify",
     description:
-      "Headless e-commerce platform with multi-vendor support, inventory management, and Stripe payments.",
-    tech: ["Next.js", "Prisma", "PostgreSQL", "Stripe", "Redis", "AWS S3"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Authify is a complete authentication and session management system built with a modern full-stack architecture. It handles secure user onboarding, session control, and email workflows with scalability in mind.",
+    tech: [
+      "React",
+      "Typescript",
+      "Axios",
+      "Tailwindcss",
+      "Shadcn",
+      "Tanstack Query",
+      "Zod",
+      "Express",
+      "PostgreSQL",
+      "Prisma ORM",
+      "BullMQ",
+      "Redis",
+      "Nodemailer",
+    ],
+    liveUrl: "https://authify.brijeshdev.in/",
+    githubUrl: "https://github.com/brijeshdevio/authify",
     category: "Full-Stack",
     featured: false,
   },
@@ -87,7 +164,10 @@ export default function ProjectsSection() {
   );
 
   return (
-    <section id="projects" className="relative w-full bg-background py-24 md:py-32">
+    <section
+      id="projects"
+      className="relative w-full bg-background py-24 md:py-32"
+    >
       {/* Background pattern */}
       <div
         className="pointer-events-none absolute inset-0 opacity-5"
@@ -98,7 +178,7 @@ export default function ProjectsSection() {
         }}
       />
 
-      <div className="container relative z-10 mx-auto max-w-7xl px-6">
+      <div className="relative z-10 container mx-auto max-w-7xl px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
