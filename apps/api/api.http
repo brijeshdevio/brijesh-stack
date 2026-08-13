@@ -1,0 +1,21 @@
+@base_url = http://localhost:5000/api/v1
+
+
+### Get Root
+GET {{base_url}}
+
+
+### Health Check
+GET {{base_url}}/health
+
+
+### Contact Form Submission
+POST {{base_url}}/forms/contact
+Content-Type: application/json
+
+{
+  "name": "Alex Johnson",
+  "email": "alex@hot.com",
+  "subject": "Course Enrollment Inquiry",
+  "message": "Hello, I would like to know more about your available courses and enrollment process."
+}
