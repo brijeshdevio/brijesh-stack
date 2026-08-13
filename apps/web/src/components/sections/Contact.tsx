@@ -13,7 +13,7 @@ import {
   Lock,
   Clock,
 } from "lucide-react";
-import { FaGithub, FaTwitter } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 
 const contactSchema = z.object({
@@ -57,7 +57,7 @@ export default function ContactSection() {
   const contactMethods = [
     {
       icon: Mail,
-      title: "bk6500416@gmail.com",
+      title: "brijeshio@duck.com",
       subtitle: "Send me an email",
       delay: 0.1,
     },
@@ -81,10 +81,13 @@ export default function ContactSection() {
   ];
 
   const socialLinks = [
-    { icon: FaGithub, href: "#", delay: 0.4 },
-    { icon: FiLinkedin, href: "#", delay: 0.45 },
-    { icon: FaTwitter, href: "#", delay: 0.5 },
-    { icon: Mail, href: "#", delay: 0.55 },
+    { icon: FaGithub, href: "https://github.com/brijeshdevio", delay: 0.4 },
+    {
+      icon: FiLinkedin,
+      href: "https://linkedin.com/in/brijeshsoftdev",
+      delay: 0.45,
+    },
+    { icon: Mail, href: "mailto:brijeshio@duck.com", delay: 0.55 },
   ];
 
   return (

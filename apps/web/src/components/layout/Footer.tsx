@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowUp, Mail, MapPin } from "lucide-react";
-import { FaGithub, FaTwitter } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import Logo from "@/assets/Logo";
 
@@ -24,10 +24,12 @@ const serviceItems = [
 ];
 
 const socialLinks = [
-  { icon: FaGithub, href: "#" },
-  { icon: FiLinkedin, href: "#" },
-  { icon: FaTwitter, href: "#" },
-  { icon: Mail, href: "#" },
+  { icon: FaGithub, href: "https://github.com/brijeshdevio" },
+  {
+    icon: FiLinkedin,
+    href: "https://linkedin.com/in/brijeshsoftdev",
+  },
+  { icon: Mail, href: "mailto:brijeshio@duck.com" },
 ];
 
 export default function FooterLayout() {

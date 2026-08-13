@@ -126,9 +126,11 @@ export default function NavbarLayout() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4 }}
           >
-            <Button className="font-['DM_Sans'] transition-all duration-300 hover:scale-105">
-              Hire Me
-            </Button>
+            <a href="mailto:brijeshio@duck.com" target="_blank">
+              <Button className="font-['DM_Sans'] transition-all duration-300 hover:scale-105">
+                Hire Me
+              </Button>
+            </a>
           </motion.div>
         </div>
 
@@ -186,9 +188,11 @@ export default function NavbarLayout() {
               </nav>
 
               <div className="mt-auto pt-8">
-                <Button className="w-full py-6 font-['DM_Sans'] text-lg transition-all duration-300 hover:shadow-md hover:shadow-primary/40">
-                  Hire Me
-                </Button>
+                <a href="mailto:brijeshio@duck.com" target="_blank">
+                  <Button className="w-full py-6 font-['DM_Sans'] text-lg transition-all duration-300 hover:shadow-md hover:shadow-primary/40">
+                    Hire Me
+                  </Button>
+                </a>
               </div>
             </SheetContent>
           </Sheet>

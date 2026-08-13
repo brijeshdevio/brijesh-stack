@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 
 import { Button } from "@/components/ui/button";
+import resumePdf from "@/assets/Brijesh Kumar - Full Stack Engineer Resume.pdf";
 
 const CODE_LINES = [
   {
@@ -281,7 +282,12 @@ export default function HeroSection() {
                 <Button
                   variant="outline"
                   className="group h-12 bg-transparent px-8 font-['DM_Sans'] text-base"
-                  onClick={() => window.open("/cv.pdf", "_blank")}
+                  onClick={() => {
+                    const link = document.createElement("a");
+                    link.href = resumePdf;
+                    link.download = "Brijesh_Kumar_Resume.pdf";
+                    link.click();
+                  }}
                 >
                   <Download className="mr-2 h-4 w-4 text-muted-foreground transition-colors group-hover:text-foreground" />
                   Download CV
@@ -309,7 +315,7 @@ export default function HeroSection() {
                 },
                 {
                   icon: Mail,
-                  href: "mailto:bk6500416@gmail.com",
+                  href: "mailto:brijeshio@duck.com",
                   label: "Email",
                 },
               ].map((social, idx) => (
