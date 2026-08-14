@@ -1,3 +1,4 @@
+import { Toaster } from "sonner";
 import NavbarLayout from "@/components/layout/Navbar";
 import HeroSection from "@/components/sections/Hero";
 import AboutSection from "@/components/sections/About";
@@ -23,6 +24,7 @@ export function App() {
         <ContactSection />
       </main>
       <FooterLayout />
+      <Toaster />
     </>
   );
 }

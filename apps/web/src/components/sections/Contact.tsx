@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
+import { apiClient } from "@/lib/apiClient";
+import { toast } from "sonner";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -39,18 +41,21 @@ export default function ContactSection() {
     resolver: zodResolver(contactSchema),
   });
 
-  const onSubmit = async (_: ContactFormData) => {
+  const onSubmit = async (formData: ContactFormData) => {
     setFormStatus("submitting");
     try {
-      // Simulate network request. Replace with real endpoint (e.g., Formspree, Web3Forms)
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      const { message } = await apiClient
+        .post("/forms/contact", formData)
+        .then((res) => res.data);
       setFormStatus("success");
-      setTimeout(() => {
-        setFormStatus("idle");
-        reset();
-      }, 3000);
+      toast.success(message || "Message sent successfully!");
     } catch {
       setFormStatus("error");
+      toast.error(
+        "Something went wrong. Please try again or email me directly."
+      );
+    } finally {
+      reset();
     }
   };
 
